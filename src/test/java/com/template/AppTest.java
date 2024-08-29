@@ -100,14 +100,14 @@ class AppTest {
     }
 
     @Test
-    void testTransferirinvalidamount() {
+    void testTransferinvalidamount() {
         Map<String, Integer> updatedAccounts = transfer(accounts, "juan", "mati", -10);
         assertEquals(20, updatedAccounts.get("juan"));
         assertEquals(10, updatedAccounts.get("mati"));
     }
 
     @Test
-    void testTransferir5() {
+    void testTransfer5() {
         Map<String, Integer> updatedAccounts = transfer(accounts, "juan", "mati", 100);
         assertEquals(20, updatedAccounts.get("juan"));
         assertEquals(10, updatedAccounts.get("mati"));
